@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio Emmanuelle Laporte</title>
+    <link rel="icon" href="./img/main.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html" class="logo"> Emma </a>
+        <nav>
+            <a href="./index.html"class="active">Accueil</a>
+            <!-- <a id="#activer">Résumé</a>
+            <a href="#" class="">Porfolio</a> -->
+            <a href="./assets/html/contact.html" class="">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="./img/main.webp" alt="Icon personnalisé">
+        </div>
+        <div class="home-content">
+            <h1>Hello, c'est <span>Emma</span></h1>
+            <h3 class="typing-text">Je suis <span></span></h3>
+            <p>Animée par une profonde passion pour la conception d'interfaces utilisateur, l'art graphique et le
+                développement web, j'ai entrepris un parcours éducatif transformateur visant à affiner mes compétences.
+                Mon objectif est de me forger une carrière durable dans le monde dynamique du web, dans lequel je
+                prévois de saisir de nouvelles opportunités passionnantes.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/emmanuelle-laporte"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Emmalpta"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.behance.net/emmalpt"><i class="fa-brands fa-behance"></i></a>
+            </div>
+
+            <button id="popupBtn" class="btn">Curriculum Vitae</button>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="./img/cv.webp" alt="curriculum vitae de Emmanuelle Laporte" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start services section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Résumé</h1>
+                <a href="#activer"></a>
+                <h6>Ce que je peux réaliser</h6>
+            </div>
+            <div class="my-skills">
+                <!-- Start 1st skill -->
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h1>Web Designer UI/UX</h1>
+                    <p>Spécialisée dans la création d'interfaces utilisateur esthétiques et
+                        intuitives, alliant design graphique et expérience utilisateur pour offrir des solutions
+                        digitales innovantes.</p>
+                </div>
+                <!-- End 1st skill -->
+
+                <!-- Start 2nd skill -->
+                <div class="skill">
+
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Développeur Front-end</h1>
+                    <p>Experte dans la création de sites et d'applications performants, en
+                        alliant code et design pour offrir des expériences utilisateur optimisées.</p>
+                </div>
+                <!-- End 2nd skill -->
+
+                <!-- Start 3th skill -->
+                <div class="skill">
+
+                    <div class="icon-container">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h1>Graphique Designer</h1>
+                    <p>Expérimenté dans la création d’identités visuelles percutantes et de designs
+                        esthétiques qui captent l’essence des marques et communiquent efficacement leurs messages.</p>
+                </div>
+                <!-- End 3th skill -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Porfolio  -->
+
+    <div class="bloc">
+        <div class="row">
+            <a href="./assets/html/fono.html" class="container-b">
+                <img src="./img/fono/coverfono.webp" alt="Image du logo de Fono">
+                <div class="overlay">Refont Website de Fono</div>
+            </a>
+            <a href="./assets/html/vertical.html" class="container-b">
+                <img src="./img/vertical/coververtical.webp" alt="Image de page de couverture de la charte graphique de Vertical Shelter">
+                <div class="overlay">Projet client Vertical Shelter</div>
+            </a>
+            <a href="https://crimson-factory.fr/" class="container-b">
+                <img src="./img/crimson/crimson-factory-vignette.webp" alt="Logo de Crimson Factory">
+                <div class="overlay">Stage chez Crimson Factory</div>
+            </a>
+        </div>
+
+        <!-- <div class="row">
+            <a href="page4.html" class="container-b">
+                <img src="image4.jpg" alt="Image 4">
+                <div class="overlay">Refont Website By Fono</div>
+            </a>
+            <a href="page5.html" class="container-b">
+                <img src="image5.jpg" alt="Image 5">
+                <div class="overlay">Refont Website By Fono</div>
+            </a>
+            <a href="page6.html" class="container-b">
+                <img src="image6.jpg" alt="Image 6">
+                <div class="overlay">Refont Website By Fono</div>
+            </a>
+        </div> -->
+    </div>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    background: url(../../img/background.webp)no-repeat center fixed;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Diapo */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 130px;
+    align-items: center;
+}
+
+.title h2 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #969696;
+}
+
+/* DIAPO */
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    top: 100px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Boutons Précédent/Suivant */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cercles indicateurs */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Effet de fondu */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .prev, .next {
+        font-size: 14px; /* Réduit la taille des boutons */
+        padding: 12px;   /* Réduit la taille du padding des boutons */
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Le conteneur prend toute la largeur disponible */
+    }
+
+    .dot {
+        height: 12px; /* Réduit la taille des cercles indicateurs */
+        width: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .prev, .next {
+        font-size: 12px; /* Réduit encore plus la taille des boutons */
+        padding: 10px;   /* Réduit encore plus la taille du padding des boutons */
+    }
+
+    .dot {
+        height: 10px; /* Réduit encore plus la taille des cercles indicateurs */
+        width: 10px;
+    }
+}
